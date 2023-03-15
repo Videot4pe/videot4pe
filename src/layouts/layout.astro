@@ -1,0 +1,30 @@
+---
+import Header from '@components/header.astro';
+import Container from '@components/container.astro'
+import '../styles/reset.css';
+import '../styles/global.css';
+
+export interface Props {
+  pageTitle?: string;
+}
+const { pageTitle = 'Videot4pe' } = Astro.props as Props;
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{pageTitle}</title>
+  </head>
+  <body>
+    <Header />
+    <main>
+      <Container>
+        <slot />
+      </Container>
+    </main>
+    <!-- <Footer /> -->
+  </body>
+</html>

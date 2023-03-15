@@ -1,0 +1,57 @@
+---
+import NavBtn from "./nav-btn.astro";
+
+---
+
+<header class="header">
+  <div class="header__container container">
+    <div class="logo">
+      <a href="/">
+        Garanya
+        <!-- <img src={logo} alt="" /> -->
+      </a>
+    </div>
+    <nav>
+      <ul>
+        <li>
+          <NavBtn href="/about">About</NavBtn>
+        </li>
+        <li>
+          <NavBtn href="/blog">Blog</NavBtn>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<style lang="scss">
+  .header {
+    height: 70px;
+    background: var(--color-secondary);
+    &__container {
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+  }
+
+  .header img {
+    height: 35px;
+    vertical-align: middle;
+  }
+
+  .header nav ul {
+    display: flex;
+    list-style: none;
+  }
+
+  .header nav ul li {
+    padding: 0 10px;
+  }
+
+  .header a {
+    color: white;
+    text-decoration: none;
+  }
+</style>

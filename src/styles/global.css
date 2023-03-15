@@ -1,0 +1,12 @@
+:root {
+  --color-primary: #EDEDDF;
+  /* 95CDBA */
+  --color-secondary: #0D1218;
+  --color-lemon: #EEEC9A;
+  font-family: 'Recursive', monospace; 
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto; 
+}
