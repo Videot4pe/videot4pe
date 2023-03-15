@@ -6,7 +6,7 @@ import sitemap from "@astrojs/sitemap";
 // https://astro.build/config
 export default defineConfig({
   site: 'https://videot4pe.github.io',
-  // base: '/videot4pe',
+  base: '/videot4pe',
   integrations: [
     image({serviceEntryPoint: "@astrojs/image/sharp"}), mdx(), sitemap()
   ]
