@@ -30,11 +30,11 @@ const { href = '/' } = Astro.props as Props;
   .btn {
     display: block;
     cursor: pointer;
-    padding: 0.3em .5em;
+    padding: 0.2em .4em;
     background: transparent;
     outline: none;
     border: 0;
-    color: var(--color-secondary);
+    color: var(--text-100);
     letter-spacing: 0.1em;
     font-family: monospace;
     font-size: 1rem;
@@ -49,11 +49,11 @@ const { href = '/' } = Astro.props as Props;
 
   .cube .bg-top {
     position: absolute;
-    height: 10px;
-    background: var(--color-secondary);
+    height: 5px;
+    background: var(--primary-100);
     bottom: 100%;
-    left: 5px;
-    right: -5px;
+    left: 2.5px;
+    right: -2.5px;
     transform: skew(-45deg, 0);
     margin: 0;
     transition: all 0.4s;
@@ -69,17 +69,17 @@ const { href = '/' } = Astro.props as Props;
     bottom: 0;
     top: 0;
     right: 0;
-    background: var(--color-secondary);
+    background: var(--primary-100);
     transition: all 0.4s;
   }
 
   .cube .bg-right {
     position: absolute;
-    background: var(--color-secondary);
-    top: -5px;
+    background: var(--primary-100);
+    top: -2.5px;
     z-index: 0;
-    bottom: 5px;
-    width: 10px;
+    bottom: 2.5px;
+    width: 5px;
     left: 100%;
     transform: skew(0, -45deg);
     transition: all 0.4s;
@@ -90,7 +90,7 @@ const { href = '/' } = Astro.props as Props;
   }
 
   .cube .bg-inner {
-    background: white;
+    background: var(--bg-100);
     position: absolute;
     left: 2px;
     right: 2px;
@@ -104,19 +104,19 @@ const { href = '/' } = Astro.props as Props;
   }
 
   .cube:hover .bg-inner {
-    background: var(--color-secondary);
+    background: var(--primary-100);
     transition: all 0.4s;
   }
 
   .cube:hover .text {
-    color: white;
+    color: var(--text-100);
     transition: all 0.4s;
   }
 
   .cube:hover .bg-right,
   .cube:hover .bg,
   .cube:hover .bg-top {
-    background: white;
+    background: var(--bg-100);
   }
 
   .cube:active {

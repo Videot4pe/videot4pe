@@ -1,5 +1,5 @@
 :root {
-  --primary-100:#26A69A;
+  /* --primary-100:#26A69A;
   --primary-200:#408d86;
   --primary-300:#cdfaf6;
   --accent-100:#80CBC4;
@@ -8,18 +8,22 @@
   --text-200:#728f9e;
   --bg-100:#E0F2F1;
   --bg-200:#D0EBEA;
-  --bg-300:#FFFFFF;
-    
-  --color-primary: #EDEDDF;
+  --bg-300:#FFFFFF; */
+  /* --color-primary: #EDEDDF; */
   /* 95CDBA */
-  --color-secondary: #0D1218;
-  --color-lemon: #EEEC9A;
+  /* --color-secondary: #0D1218; */
+  /* --color-lemon: #EEEC9A; */
+/* 
+  --bg-100: #5e5f62;
+  --text-100: #00f965; */
 
-  font-family: 'Recursive', monospace; 
+  --bg-100: #202324;
+  --text-100: #f8d697;
+  --text-200: #e25141;
 }
 
 [data-theme="dark"] {
-  --primary-100:#7B4F8E;
+  /* --primary-100:#7B4F8E;
   --primary-200:#563763;
   --primary-300:#D7C5DF;
   --accent-100:#B794C0;
@@ -28,15 +32,46 @@
   --text-200:#909090;
   --bg-100:#3B2D4D;
   --bg-200:#382B49;
-  --bg-300:#4D3B64;
+  --bg-300:#4D3B64; */
+
+  --bg-100: #e3e0df;
+  --text-100: #193543;
+  --text-200: #bd4431;
 }
 
 .container {
   max-width: 1200px;
-  margin: 0 auto; 
+  margin: 0 auto;
 }
 
 body {
-  background-color: var(--primary-300);
+  font-family: 'Recursive', monospace; 
+  background-color: var(--bg-100);
+  /* background-image: linear-gradient(to right top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1); */
   color: var(--text-100);
+}
+
+header {
+  background-color: var(--bg-100);
+}
+
+body::-webkit-scrollbar{
+  display: none;
+}
+
+.flex {
+  display: flex;
+}
+
+.justify-between {
+  display: flex;
+  justify-content: space-between;
+}
+
+.self-center {
+  align-self: center;
+}
+
+.title {
+  color: var(--text-200);
 }

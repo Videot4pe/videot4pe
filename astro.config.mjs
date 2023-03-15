@@ -7,6 +7,10 @@ import sitemap from "@astrojs/sitemap";
 export default defineConfig({
   site: 'https://videot4pe.github.io',
   base: '/videot4pe',
+  markdown: {
+    syntaxHighlight: 'prism',
+    // remarkPlugins: [remarkToc]
+  },
   integrations: [
     image({serviceEntryPoint: "@astrojs/image/sharp"}), mdx(), sitemap()
   ]
