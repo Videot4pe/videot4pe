@@ -1,12 +1,42 @@
 :root {
+  --primary-100:#26A69A;
+  --primary-200:#408d86;
+  --primary-300:#cdfaf6;
+  --accent-100:#80CBC4;
+  --accent-200:#43A49B;
+  --text-100:#263339;
+  --text-200:#728f9e;
+  --bg-100:#E0F2F1;
+  --bg-200:#D0EBEA;
+  --bg-300:#FFFFFF;
+    
   --color-primary: #EDEDDF;
   /* 95CDBA */
   --color-secondary: #0D1218;
   --color-lemon: #EEEC9A;
+
   font-family: 'Recursive', monospace; 
+}
+
+[data-theme="dark"] {
+  --primary-100:#7B4F8E;
+  --primary-200:#563763;
+  --primary-300:#D7C5DF;
+  --accent-100:#B794C0;
+  --accent-200:#895896;
+  --text-100:#FFFFFF;
+  --text-200:#909090;
+  --bg-100:#3B2D4D;
+  --bg-200:#382B49;
+  --bg-300:#4D3B64;
 }
 
 .container {
   max-width: 1200px;
   margin: 0 auto; 
+}
+
+body {
+  background-color: var(--primary-300);
+  color: var(--text-100);
 }
